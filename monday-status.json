@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-16T09:46:06.415Z",
+  "updated": "2026-06-16T09:57:17.750Z",
   "source": "Monday.com — Automation & Integration Tracker",
   "board": "18416976039",
   "counts": {
     "live": 7,
-    "testing": 2,
-    "total": 9
+    "testing": 3,
+    "total": 10
   },
   "items": [
     {
@@ -49,19 +49,27 @@
       "client": "NikahSatu"
     },
     {
-      "name": "Check pin point location RAJ KL",
+      "name": "[Google Map] Check pin point location RAJ KL",
       "status": "Done / Live",
       "state": "live",
-      "platform": "",
+      "platform": "Google",
       "type": "",
-      "client": ""
+      "client": "NikahSatu"
     },
     {
-      "name": "Tally Event details across vendor board",
+      "name": "[Weekly Run] Sync Data across Multiple Board",
       "status": "Done / Live",
       "state": "live",
       "platform": "n8n",
       "type": "Automation",
+      "client": "NikahSatu"
+    },
+    {
+      "name": "LOCAL SEO OPTIMIZATION",
+      "status": "Testing",
+      "state": "testing",
+      "platform": "Hermes",
+      "type": "AI Agent, Automation",
       "client": "NikahSatu"
     },
     {
@@ -69,7 +77,7 @@
       "status": "Testing",
       "state": "testing",
       "platform": "n8n",
-      "type": "Automation",
+      "type": "Automation, AI Agent",
       "client": "NikahSatu"
     },
     {
@@ -77,7 +85,7 @@
       "status": "Testing",
       "state": "testing",
       "platform": "n8n, Telegram, Google",
-      "type": "Bot",
+      "type": "Bot, AI Agent",
       "client": "NikahSatu"
     }
   ]
