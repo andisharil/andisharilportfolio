@@ -1,19 +1,19 @@
 {
-  "updated": "2026-06-16T10:25:09.690Z",
+  "updated": "2026-06-16T10:29:35.865Z",
   "source": "Monday.com — Automation & Integration Tracker",
   "board": "18416976039",
   "counts": {
-    "live": 4,
+    "live": 6,
     "testing": 3,
-    "total": 7
+    "total": 9
   },
   "items": [
     {
-      "name": "City Ipoh — Auto Create Subitems",
+      "name": "Catering Order Automation Monday.com x Sufy",
       "status": "Done / Live",
       "state": "live",
       "platform": "n8n",
-      "type": "Automation",
+      "type": "Automation, AI Agent",
       "client": "NikahSatu"
     },
     {
@@ -33,6 +33,22 @@
       "client": "NikahSatu"
     },
     {
+      "name": "Storehub -- Monday.com Automation + FIFO",
+      "status": "Done / Live",
+      "state": "live",
+      "platform": "Boost.space",
+      "type": "Automation, Integration",
+      "client": "NikahSatu"
+    },
+    {
+      "name": "Sales Daily Report (Monday.com - Telegram)",
+      "status": "Done / Live",
+      "state": "live",
+      "platform": "Boost.space",
+      "type": "Automation",
+      "client": "NikahSatu"
+    },
+    {
       "name": "[Weekly Run] Sync Data across Multiple Board",
       "status": "Done / Live",
       "state": "live",
@@ -49,19 +65,19 @@
       "client": "NikahSatu"
     },
     {
-      "name": "Catering Order Automation Monday.com x Sufy",
-      "status": "Testing",
-      "state": "testing",
-      "platform": "n8n",
-      "type": "Automation, AI Agent",
-      "client": "NikahSatu"
-    },
-    {
       "name": "Telegram Chatbot for Expenses",
       "status": "Testing",
       "state": "testing",
       "platform": "n8n, Telegram, Google",
       "type": "Bot, AI Agent",
+      "client": "NikahSatu"
+    },
+    {
+      "name": "Alivehq API Development",
+      "status": "Testing",
+      "state": "testing",
+      "platform": "",
+      "type": "Automation",
       "client": "NikahSatu"
     }
   ]
