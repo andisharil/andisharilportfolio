@@ -1,17 +1,84 @@
 {
-  "updated": "2026-06-16T18:05:00+08:00",
+  "updated": "2026-06-16T09:46:06.415Z",
   "source": "Monday.com — Automation & Integration Tracker",
   "board": "18416976039",
-  "counts": { "live": 7, "testing": 2, "total": 9 },
+  "counts": {
+    "live": 7,
+    "testing": 2,
+    "total": 9
+  },
   "items": [
-    { "name": "City Melaka — Auto Create Subitems", "status": "Done / Live", "state": "live", "platform": "n8n", "type": "Automation", "client": "NikahSatu" },
-    { "name": "City Kuantan — Auto Create Subitems", "status": "Done / Live", "state": "live", "platform": "n8n", "type": "Automation", "client": "NikahSatu" },
-    { "name": "City Ipoh — Auto Create Subitems", "status": "Done / Live", "state": "live", "platform": "n8n", "type": "Automation", "client": "NikahSatu" },
-    { "name": "City KV — Auto Create Subitems", "status": "Done / Live", "state": "live", "platform": "n8n", "type": "Automation", "client": "NikahSatu" },
-    { "name": "City KV 4 (2028) — Auto Create Subitems", "status": "Done / Live", "state": "live", "platform": "n8n", "type": "Automation", "client": "NikahSatu" },
-    { "name": "Tally Event details across vendor board", "status": "Done / Live", "state": "live", "platform": "n8n", "type": "Automation", "client": "NikahSatu" },
-    { "name": "Check pin point location RAJ KL", "status": "Done / Live", "state": "live", "platform": "", "type": "", "client": "" },
-    { "name": "Catering Order Automation Monday.com x Sufy", "status": "Testing", "state": "testing", "platform": "n8n", "type": "Automation", "client": "NikahSatu" },
-    { "name": "Telegram Chatbot for Expenses", "status": "Testing", "state": "testing", "platform": "n8n, Telegram, Google", "type": "Bot", "client": "NikahSatu" }
+    {
+      "name": "City Melaka — Auto Create Subitems",
+      "status": "Done / Live",
+      "state": "live",
+      "platform": "n8n",
+      "type": "Automation",
+      "client": "NikahSatu"
+    },
+    {
+      "name": "City Kuantan — Auto Create Subitems",
+      "status": "Done / Live",
+      "state": "live",
+      "platform": "n8n",
+      "type": "Automation",
+      "client": "NikahSatu"
+    },
+    {
+      "name": "City Ipoh — Auto Create Subitems",
+      "status": "Done / Live",
+      "state": "live",
+      "platform": "n8n",
+      "type": "Automation",
+      "client": "NikahSatu"
+    },
+    {
+      "name": "City KV — Auto Create Subitems",
+      "status": "Done / Live",
+      "state": "live",
+      "platform": "n8n",
+      "type": "Automation",
+      "client": "NikahSatu"
+    },
+    {
+      "name": "City KV 4 (2028) — Auto Create Subitems",
+      "status": "Done / Live",
+      "state": "live",
+      "platform": "n8n",
+      "type": "Automation",
+      "client": "NikahSatu"
+    },
+    {
+      "name": "Check pin point location RAJ KL",
+      "status": "Done / Live",
+      "state": "live",
+      "platform": "",
+      "type": "",
+      "client": ""
+    },
+    {
+      "name": "Tally Event details across vendor board",
+      "status": "Done / Live",
+      "state": "live",
+      "platform": "n8n",
+      "type": "Automation",
+      "client": "NikahSatu"
+    },
+    {
+      "name": "Catering Order Automation Monday.com x Sufy",
+      "status": "Testing",
+      "state": "testing",
+      "platform": "n8n",
+      "type": "Automation",
+      "client": "NikahSatu"
+    },
+    {
+      "name": "Telegram Chatbot for Expenses",
+      "status": "Testing",
+      "state": "testing",
+      "platform": "n8n, Telegram, Google",
+      "type": "Bot",
+      "client": "NikahSatu"
+    }
   ]
 }
