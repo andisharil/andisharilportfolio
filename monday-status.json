@@ -1,47 +1,15 @@
 {
-  "updated": "2026-06-16T10:20:54.792Z",
+  "updated": "2026-06-16T10:25:09.690Z",
   "source": "Monday.com — Automation & Integration Tracker",
   "board": "18416976039",
   "counts": {
-    "live": 7,
+    "live": 4,
     "testing": 3,
-    "total": 10
+    "total": 7
   },
   "items": [
     {
-      "name": "City Melaka — Auto Create Subitems",
-      "status": "Done / Live",
-      "state": "live",
-      "platform": "n8n",
-      "type": "Automation",
-      "client": "NikahSatu"
-    },
-    {
-      "name": "City Kuantan — Auto Create Subitems",
-      "status": "Done / Live",
-      "state": "live",
-      "platform": "n8n",
-      "type": "Automation",
-      "client": "NikahSatu"
-    },
-    {
       "name": "City Ipoh — Auto Create Subitems",
-      "status": "Done / Live",
-      "state": "live",
-      "platform": "n8n",
-      "type": "Automation",
-      "client": "NikahSatu"
-    },
-    {
-      "name": "City KV — Auto Create Subitems",
-      "status": "Done / Live",
-      "state": "live",
-      "platform": "n8n",
-      "type": "Automation",
-      "client": "NikahSatu"
-    },
-    {
-      "name": "City KV 4 (2028) — Auto Create Subitems",
       "status": "Done / Live",
       "state": "live",
       "platform": "n8n",
@@ -53,7 +21,15 @@
       "status": "Done / Live",
       "state": "live",
       "platform": "Google",
-      "type": "",
+      "type": "Other",
+      "client": "NikahSatu"
+    },
+    {
+      "name": "All City Team - Auto Create Subitems",
+      "status": "Done / Live",
+      "state": "live",
+      "platform": "n8n",
+      "type": "Automation, Integration",
       "client": "NikahSatu"
     },
     {
