@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-17T17:00:01.619Z",
+  "updated": "2026-06-18T00:11:52.083Z",
   "source": "Monday.com — Automation & Integration Tracker",
   "board": "18416976039",
   "counts": {
     "live": 6,
-    "testing": 4,
-    "total": 10
+    "testing": 5,
+    "total": 11
   },
   "items": [
     {
@@ -87,6 +87,14 @@
       "platform": "",
       "type": "Automation",
       "client": "NikahSatu"
+    },
+    {
+      "name": "Sosial Media Automation",
+      "status": "Testing",
+      "state": "testing",
+      "platform": "n8n",
+      "type": "AI Agent, Automation",
+      "client": "Zest Creative, NikahSatu"
     }
   ]
 }
