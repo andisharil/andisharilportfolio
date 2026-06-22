@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-21T17:00:01.220Z",
+  "updated": "2026-06-22T17:00:01.645Z",
   "source": "Monday.com — Automation & Integration Tracker",
   "board": "18416976039",
   "counts": {
-    "live": 6,
+    "live": 7,
     "testing": 5,
-    "total": 11
+    "total": 12
   },
   "items": [
     {
@@ -45,6 +45,14 @@
       "status": "Done / Live",
       "state": "live",
       "platform": "Boost.space",
+      "type": "Automation",
+      "client": "NikahSatu"
+    },
+    {
+      "name": "Daily Lead Check (+1)",
+      "status": "Done / Live",
+      "state": "live",
+      "platform": "n8n, Monday.com, Telegram",
       "type": "Automation",
       "client": "NikahSatu"
     },
