@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-23T17:00:01.191Z",
+  "updated": "2026-06-24T17:00:00.896Z",
   "source": "Monday.com — Automation & Integration Tracker",
   "board": "18416976039",
   "counts": {
-    "live": 7,
-    "testing": 5,
+    "live": 8,
+    "testing": 4,
     "total": 12
   },
   "items": [
@@ -14,6 +14,14 @@
       "state": "live",
       "platform": "n8n",
       "type": "Automation, AI Agent",
+      "client": "NikahSatu"
+    },
+    {
+      "name": "Telegram Chatbot for Expenses",
+      "status": "Done / Live",
+      "state": "live",
+      "platform": "n8n, Telegram, Google",
+      "type": "Bot, AI Agent",
       "client": "NikahSatu"
     },
     {
@@ -78,14 +86,6 @@
       "state": "testing",
       "platform": "n8n, Google",
       "type": "Integration",
-      "client": "NikahSatu"
-    },
-    {
-      "name": "Telegram Chatbot for Expenses",
-      "status": "Testing",
-      "state": "testing",
-      "platform": "n8n, Telegram, Google",
-      "type": "Bot, AI Agent",
       "client": "NikahSatu"
     },
     {
