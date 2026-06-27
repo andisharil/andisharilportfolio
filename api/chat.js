@@ -28,6 +28,7 @@ module.exports = async function handler(req, res) {
   } catch (_) {}
 
   // embed the question with Voyage (asymmetric: query type)
+  const rateMsg = "I'm on a free-tier rate limit right now (a few requests per minute) — give it about 20 seconds and ask me again. 🙂";
   let embedding;
   try {
     const er = await fetch('https://api.voyageai.com/v1/embeddings', {
@@ -35,9 +36,14 @@ module.exports = async function handler(req, res) {
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${VOY}` },
       body: JSON.stringify({ model: 'voyage-3.5-lite', input: [q], input_type: 'query', output_dimension: 1024 }),
     });
-    if (!er.ok) throw new Error(await er.text());
-    embedding = (await er.json()).data[0].embedding;
-  } catch (e) { return res.status(502).json({ error: 'embedding failed' }); }
+    if (er.status === 429) return res.status(200).json({ answer: rateMsg });
+    const txt = await er.text();
+    if (!er.ok) { if (/rate limit|\bRPM\b|TPM/i.test(txt)) return res.status(200).json({ answer: rateMsg }); throw new Error(txt); }
+    embedding = JSON.parse(txt).data[0].embedding;
+  } catch (e) {
+    if (/rate limit|\bRPM\b|TPM|429/i.test(String(e && e.message))) return res.status(200).json({ answer: rateMsg });
+    return res.status(502).json({ error: 'embedding failed' });
+  }
 
   // retrieve top-k chunks from pgvector
   let chunks = [];
