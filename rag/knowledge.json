@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Who is Andi Sharil Azwan",
+    "content": "Andi Sharil Azwan is an AI Automation Engineer & Architect based in Johor, Malaysia. He designs, builds, and maintains LLM-driven workflows — engineering Claude API assistants, end-to-end n8n and Monday.com automation, and CRM / API / webhook integrations across regional teams. He speaks English (good) and Bahasa Melayu (expert / native). He is open to and available for full-time AI automation engineering roles. His guiding philosophy: 'AI isn't here to replace your team — it's here to help them go beyond their limits.' Contact: andisharil1234@gmail.com, +60 17 528 0414."
+  },
+  {
+    "title": "About Andi",
+    "content": "Andi turns business processes into tested AI workflows. He is a CRM and AI automation specialist who has spent the last several years as the sole engineer behind a multi-region operation — designing, building, and maintaining LLM-driven workflows and conversational bots that run every day in production. He is comfortable translating messy, real-world processes into structured, deterministic automation — engineering multilingual Claude prompts, wiring GraphQL and webhook integrations, and keeping a sharp focus on workflow optimization and data-driven QA. Based in Johor, Malaysia. Focus: Workflow QA & Integration."
+  },
+  {
+    "title": "Headline metrics and impact",
+    "content": "Andi's track record: 300+ production workflows shipped and maintained end to end; automation across 11 Malaysian cities; 14+ wedding venues orchestrated; 500+ Monday.com boards; service-team capacity doubled (2x); roughly 94% of intake time saved through automation. He is the sole architect of all AI-driven automation across CRM, service ops, catering, e-commerce, and finance for a wedding-venue business."
+  },
+  {
+    "title": "Project: Service Operations Suite (11 workflows)",
+    "content": "Service Operations Suite — built with Monday GraphQL, n8n, Webhook + Scheduled triggers. PROBLEM: City-level service ops were manual and error-prone, capped at ~20 events/day with transcription mistakes in booking handoffs. BUILT: 11 end-to-end automations — one per Malaysian city (Melaka, KB, BP, Prai, Ipoh, Seremban, KT, Johor, KV, KTN) — each on its own Monday board ecosystem. OUTCOME: Doubled service-team capacity to 40 events/day, eliminated transcription errors, and standardized the booking-to-service handoff."
+  },
+  {
+    "title": "Project: Vendor Provisioning Suite (12 workflows)",
+    "content": "Vendor Provisioning Suite — built with n8n, GraphQL pipelines, and Telegram monitoring. PROBLEM: Vendor items across 80+ boards needed consistent creation and updates — pricing and invoice codes drifted out of sync between venues. BUILT: 12 deterministic button-triggered GraphQL pipelines plus a centralized backend lookup layer — edit once on one board, propagate instantly to 9 workflows with no code changes. OUTCOME: Multi-venue routing with defensive error handling and Telegram monitoring across 11 cities — provisioning that ops controls without engineering."
+  },
+  {
+    "title": "Flagship Project: Catering Operations Automation System (12 workflows, 4 layers)",
+    "content": "The flagship system — Catering Operations Automation System. Stack: Monday GraphQL, Google Sheets, Supy.io REST, n8n on a Hostinger VPS, DeepSeek V4 Flash, JavaScript. PROBLEM: Kitchen ran on manual entry (~17 rows per wedding) with no real-time stock and no batch-level costing; Supy's API exposes only aggregate stock, and Monday's 10K-item ceiling can't host a batch ledger. BUILT: A 4-layer architecture — Monday (intake + planning UI), Google Sheets (FIFO batch ledger + audit log), Supy.io (master data + recipes), and n8n on a Hostinger VPS (orchestration) — running 12 production workflows, with an Execute-Workflow orchestrator chaining BOM -> Stock Check -> Telegram report on button click or a daily 6 AM schedule. ENGINEERED: Chronological per-event FIFO allocation (earlier weddings claim existing stock first, surfacing timing shortages on Monday before they hit the kitchen), recursive recipe expansion across 3-level Finished -> Semi -> Paste hierarchies, and idempotent dedup via PROD-{jobId} reference IDs. OUTCOME: One-click menu expansion auto-creates ~17 recipe subitems (~94% less intake time), verified by 25/25 BOM and 50/50 stock-event unit tests plus live deductions on real 300- and 700-pax weddings — end-to-end latency under 15 seconds. Proof points: 12 production workflows, 4-layer architecture, 47 recipes audited, 303 ingredient rows, 75/75 unit tests passed, auto-generated audit PDFs."
+  },
+  {
+    "title": "Project: AI Lead Capture & Conversational Bots",
+    "content": "AI Lead Capture & Conversational Bots — built with Anthropic Claude API, Python / aiogram, and Monday MCP, running on a self-hosted VPS. PROBLEM: Leads arrived across WhatsApp, TikTok, Instagram, and Facebook with no qualification or routing into the CRM. BUILT: AI chatbots that capture and qualify leads then auto-route into Monday CRM, plus a production Telegram staff bot (aiogram 3.x) wired to the Claude Messages API and Monday MCP on a self-hosted VPS. OUTCOME: Multilingual prompt design (English / Bahasa Melayu) with per-user history caps and token-limit handling running reliably in production."
+  },
+  {
+    "title": "Project: Integrations & Digital Ops",
+    "content": "Integrations & Digital Ops — built with Make.com, QuickBooks, StoreHub, WooCommerce, WordPress. BUILT: A StoreHub -> Monday integration with nightly FIFO inventory deduction, a Monday -> QuickBooks finance sync, and a polling StoreHub -> WooCommerce product sync keyed on SKU. OUTCOME: Replaced fully manual processes — the team now monitors instead of calculating by hand — while maintaining the WordPress site (SEO, Google Search Console) and 30+ Google Business Profiles."
+  },
+  {
+    "title": "Project: Agentic AI Assistant",
+    "content": "Agentic AI Assistant — built with Telegram Bot API, n8n, DeepSeek, and Monday. CAPABILITY: An AI that lives inside the system — it produces reports, executes tasks for the team, and assists staff from built-in knowledge of how everything works. BUILT: A self-improving Telegram bot agent with 13 HTTP tools, a 15-message rolling memory, and a knowledge layer seeded from Bot_Knowledge (57 facts) plus Bot_Lessons. OUTCOME: Kitchen staff self-serve answers and actions, and the bot's behavior keeps adapting over time — with no redeployment."
+  },
+  {
+    "title": "Skills and tech stack",
+    "content": "Latest skills: Multi-Agent Orchestrator Workflow, Hermes AI Agent. Core: Prompt Engineering, Workflow Automation, Conversational AI Design, Webhook & API Integration, CRM & System Integration. Automation tools: n8n, Make.com, Boost.space, Pabbly Connect, Webhooks & Schedulers. AI & APIs: Anthropic Claude API, Claude Messages API, Monday.com MCP, Model Context Protocol. Data & CRM: Monday.com GraphQL, Google Sheets API, Supy.io REST, QuickBooks, StoreHub, WooCommerce. Code & runtime: Python, aiogram 3.x, JavaScript, OAuth2, VPS / Self-hosting. Languages: English (good), Bahasa Melayu (expert / native)."
+  },
+  {
+    "title": "Work experience",
+    "content": "AI Automation Specialist — Zest Venture Sdn. Bhd. (Remote), Jun 2021 to Present. Sole designer and builder of all AI-driven automation across CRM, service ops, catering, e-commerce, and finance for a wedding-venue business spanning 11 cities, 14+ venues, and 500+ Monday boards. Single-handedly architected, deployed, and maintains 300+ production workflows end to end. Built AI chatbots on the Claude API and a self-hosted Telegram staff bot with Monday MCP, plus integrations spanning Make.com, QuickBooks, StoreHub, and WooCommerce. Earlier: Production Admin cum Website Development — CUD Samsudin Enterprise (Pahang), Jan 2020 to May 2021. Built a WooCommerce -> Google Sheets integration with Pabbly Connect for every agent, handled DHL e-commerce order submission, waybills, and dispatch, developed an e-commerce landing page end to end, and ran product development, packaging, and customer follow-up."
+  },
+  {
+    "title": "Education",
+    "content": "Diploma in Software Development (Internet & Multimedia), Sultan Ahmad Shah Islamic University, Pahang — Jun 2016 to Aug 2019."
+  },
+  {
+    "title": "Contact and availability",
+    "content": "Andi is open to full-time AI automation engineering roles. If you're building with LLMs, workflow automation, or CRM integration, he'd like to talk. Email: andisharil1234@gmail.com. Phone: +60 17 528 0414. Location: Johor, Malaysia. His portfolio also has a live 'Currently running' section that pulls his live and in-testing automations daily from his Automation & Integration Tracker on Monday.com — a real status feed, not a static list."
+  },
+  {
+    "title": "About this chatbot",
+    "content": "This chatbot is itself a demonstration of Andi's RAG (Retrieval-Augmented Generation) skills. It runs on a Vercel serverless function: it embeds your question with OpenAI text-embedding-3-small, retrieves the most relevant chunks of Andi's portfolio from a Supabase pgvector vector database, and generates a grounded answer with DeepSeek — with per-visitor rate limiting and on-topic guardrails. So when you chat with it, you're seeing Andi's RAG engineering working live."
+  }
+]
