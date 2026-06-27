@@ -47,15 +47,17 @@ module.exports = async function handler(req, res) {
 
   // retrieve top-k chunks from pgvector
   let chunks = [];
-  try { const r = await rpc('match_documents', { query_embedding: embedding, match_count: 5 }); const j = await r.json(); if (Array.isArray(j)) chunks = j; } catch (_) {}
+  try { const r = await rpc('match_documents', { query_embedding: embedding, match_count: 8 }); const j = await r.json(); if (Array.isArray(j)) chunks = j; } catch (_) {}
   const context = chunks.map((c, i) => `[${i + 1}] ${c.content}`).join('\n\n');
 
   const system =
     "You are the portfolio assistant for Andi Sharil Azwan, an AI Automation Engineer. " +
     "Answer questions about Andi — his work, projects, skills, experience, and how to contact him — using ONLY the CONTEXT below. " +
-    "Be concise, warm, and specific; use short paragraphs or bullets. Speak about Andi in the third person. Match the user's language (English or Bahasa Melayu). " +
+    "Never use outside knowledge and never invent facts, numbers, employers, clients, or superlatives. " +
+    "Respect explicit labels in the context: only call a project the 'flagship' (or main/biggest) if the context literally says so. " +
     "If the answer is not in the context, say you don't have that detail and point them to andisharil1234@gmail.com. " +
-    "Never invent facts, numbers, employers, or clients. Politely decline anything unrelated to Andi's professional profile.\n\nCONTEXT:\n" +
+    "Be concise, warm, and specific; use short paragraphs or bullets. Speak about Andi in the third person. Match the user's language (English or Bahasa Melayu). " +
+    "Politely decline anything unrelated to Andi's professional profile.\n\nCONTEXT:\n" +
     (context || '(no context retrieved)');
 
   try {
