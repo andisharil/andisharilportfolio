@@ -12,16 +12,24 @@
     "content": "Andi's track record: 300+ production workflows shipped and maintained end to end; automation across 11 Malaysian cities; 14+ wedding venues orchestrated; 500+ Monday.com boards; service-team capacity doubled (2x); roughly 94% of intake time saved through automation. He is the sole architect of all AI-driven automation across CRM, service ops, catering, e-commerce, and finance for a wedding-venue business."
   },
   {
+    "title": "Andi's flagship project: Catering Operations Automation System",
+    "content": "Andi's flagship and largest project is the Catering Operations Automation System — a 4-layer system running 12 production workflows that automates a wedding catering kitchen end to end. Tech stack: Monday GraphQL, Google Sheets, Supy.io REST, n8n on a Hostinger VPS, DeepSeek V4 Flash, and JavaScript. The problem it solved: the kitchen ran on manual entry (~17 rows per wedding) with no real-time stock and no batch-level costing; Supy's API exposes only aggregate stock, and Monday's 10K-item ceiling can't host a batch ledger. It is the centerpiece of Andi's portfolio and the most technically complex system he has built."
+  },
+  {
+    "title": "Catering system: architecture and engineering",
+    "content": "The Catering Operations Automation System uses a 4-layer architecture: Monday (intake + planning UI), Google Sheets (FIFO batch ledger + audit log), Supy.io (master data + recipes), and n8n on a Hostinger VPS (orchestration). An Execute-Workflow orchestrator chains BOM -> Stock Check -> Telegram report on button click or a daily 6 AM schedule. Engineering highlights: chronological per-event FIFO allocation (earlier weddings claim existing stock first, surfacing timing shortages on Monday before they hit the kitchen), recursive recipe expansion across 3-level Finished -> Semi -> Paste hierarchies, and idempotent dedup via PROD-{jobId} reference IDs."
+  },
+  {
+    "title": "Catering system: results and testing",
+    "content": "Results of the Catering Operations Automation System: one-click menu expansion auto-creates ~17 recipe subitems (about 94% less intake time), verified by 25/25 BOM and 50/50 stock-event unit tests, plus live deductions on real 300-pax and 700-pax weddings — with end-to-end latency under 15 seconds. Proof points: 12 production workflows, 4-layer architecture, 47 recipes audited, 303 ingredient rows, 75/75 unit tests passed, and auto-generated audit PDFs. It also includes a self-improving DeepSeek V4 Flash Telegram agent (13 HTTP tools, 15-message memory, learning from Bot_Knowledge with 57 seeded facts and Bot_Lessons) so kitchen staff self-serve and behavior adapts without redeployment."
+  },
+  {
     "title": "Project: Service Operations Suite (11 workflows)",
     "content": "Service Operations Suite — built with Monday GraphQL, n8n, Webhook + Scheduled triggers. PROBLEM: City-level service ops were manual and error-prone, capped at ~20 events/day with transcription mistakes in booking handoffs. BUILT: 11 end-to-end automations — one per Malaysian city (Melaka, KB, BP, Prai, Ipoh, Seremban, KT, Johor, KV, KTN) — each on its own Monday board ecosystem. OUTCOME: Doubled service-team capacity to 40 events/day, eliminated transcription errors, and standardized the booking-to-service handoff."
   },
   {
     "title": "Project: Vendor Provisioning Suite (12 workflows)",
     "content": "Vendor Provisioning Suite — built with n8n, GraphQL pipelines, and Telegram monitoring. PROBLEM: Vendor items across 80+ boards needed consistent creation and updates — pricing and invoice codes drifted out of sync between venues. BUILT: 12 deterministic button-triggered GraphQL pipelines plus a centralized backend lookup layer — edit once on one board, propagate instantly to 9 workflows with no code changes. OUTCOME: Multi-venue routing with defensive error handling and Telegram monitoring across 11 cities — provisioning that ops controls without engineering."
-  },
-  {
-    "title": "Flagship Project: Catering Operations Automation System (12 workflows, 4 layers)",
-    "content": "The flagship system — Catering Operations Automation System. Stack: Monday GraphQL, Google Sheets, Supy.io REST, n8n on a Hostinger VPS, DeepSeek V4 Flash, JavaScript. PROBLEM: Kitchen ran on manual entry (~17 rows per wedding) with no real-time stock and no batch-level costing; Supy's API exposes only aggregate stock, and Monday's 10K-item ceiling can't host a batch ledger. BUILT: A 4-layer architecture — Monday (intake + planning UI), Google Sheets (FIFO batch ledger + audit log), Supy.io (master data + recipes), and n8n on a Hostinger VPS (orchestration) — running 12 production workflows, with an Execute-Workflow orchestrator chaining BOM -> Stock Check -> Telegram report on button click or a daily 6 AM schedule. ENGINEERED: Chronological per-event FIFO allocation (earlier weddings claim existing stock first, surfacing timing shortages on Monday before they hit the kitchen), recursive recipe expansion across 3-level Finished -> Semi -> Paste hierarchies, and idempotent dedup via PROD-{jobId} reference IDs. OUTCOME: One-click menu expansion auto-creates ~17 recipe subitems (~94% less intake time), verified by 25/25 BOM and 50/50 stock-event unit tests plus live deductions on real 300- and 700-pax weddings — end-to-end latency under 15 seconds. Proof points: 12 production workflows, 4-layer architecture, 47 recipes audited, 303 ingredient rows, 75/75 unit tests passed, auto-generated audit PDFs."
   },
   {
     "title": "Project: AI Lead Capture & Conversational Bots",
@@ -32,7 +40,7 @@
     "content": "Integrations & Digital Ops — built with Make.com, QuickBooks, StoreHub, WooCommerce, WordPress. BUILT: A StoreHub -> Monday integration with nightly FIFO inventory deduction, a Monday -> QuickBooks finance sync, and a polling StoreHub -> WooCommerce product sync keyed on SKU. OUTCOME: Replaced fully manual processes — the team now monitors instead of calculating by hand — while maintaining the WordPress site (SEO, Google Search Console) and 30+ Google Business Profiles."
   },
   {
-    "title": "Project: Agentic AI Assistant",
+    "title": "Project: Agentic AI Assistant (Telegram bot)",
     "content": "Agentic AI Assistant — built with Telegram Bot API, n8n, DeepSeek, and Monday. CAPABILITY: An AI that lives inside the system — it produces reports, executes tasks for the team, and assists staff from built-in knowledge of how everything works. BUILT: A self-improving Telegram bot agent with 13 HTTP tools, a 15-message rolling memory, and a knowledge layer seeded from Bot_Knowledge (57 facts) plus Bot_Lessons. OUTCOME: Kitchen staff self-serve answers and actions, and the bot's behavior keeps adapting over time — with no redeployment."
   },
   {
@@ -41,7 +49,7 @@
   },
   {
     "title": "Work experience",
-    "content": "AI Automation Specialist — Zest Venture Sdn. Bhd. (Remote), Jun 2021 to Present. Sole designer and builder of all AI-driven automation across CRM, service ops, catering, e-commerce, and finance for a wedding-venue business spanning 11 cities, 14+ venues, and 500+ Monday boards. Single-handedly architected, deployed, and maintains 300+ production workflows end to end. Built AI chatbots on the Claude API and a self-hosted Telegram staff bot with Monday MCP, plus integrations spanning Make.com, QuickBooks, StoreHub, and WooCommerce. Earlier: Production Admin cum Website Development — CUD Samsudin Enterprise (Pahang), Jan 2020 to May 2021. Built a WooCommerce -> Google Sheets integration with Pabbly Connect for every agent, handled DHL e-commerce order submission, waybills, and dispatch, developed an e-commerce landing page end to end, and ran product development, packaging, and customer follow-up."
+    "content": "AI Automation Specialist — Zest Venture Sdn. Bhd. (Remote), Jun 2021 to Present. Sole designer and builder of all AI-driven automation across CRM, service ops, catering, e-commerce, and finance for a wedding-venue business spanning 11 cities, 14+ venues, and 500+ Monday boards. Single-handedly architected, deployed, and maintains 300+ production workflows end to end. Built AI chatbots on the Claude API and a self-hosted Telegram staff bot with Monday MCP, plus integrations spanning Make.com, QuickBooks, StoreHub, and WooCommerce. Earlier role: Production Admin cum Website Development — CUD Samsudin Enterprise (Pahang), Jan 2020 to May 2021. Built a WooCommerce -> Google Sheets integration with Pabbly Connect for every agent, handled DHL e-commerce order submission, waybills, and dispatch, developed an e-commerce landing page end to end, and ran product development, packaging, and customer follow-up."
   },
   {
     "title": "Education",
