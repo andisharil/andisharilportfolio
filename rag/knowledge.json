@@ -53,6 +53,6 @@
   },
   {
     "title": "About this chatbot",
-    "content": "This chatbot is itself a demonstration of Andi's RAG (Retrieval-Augmented Generation) skills. It runs on a Vercel serverless function: it embeds your question with OpenAI text-embedding-3-small, retrieves the most relevant chunks of Andi's portfolio from a Supabase pgvector vector database, and generates a grounded answer with DeepSeek — with per-visitor rate limiting and on-topic guardrails. So when you chat with it, you're seeing Andi's RAG engineering working live."
+    "content": "This chatbot is itself a demonstration of Andi's RAG (Retrieval-Augmented Generation) skills. It runs on a Vercel serverless function: it embeds your question with Voyage AI embeddings, retrieves the most relevant chunks of Andi's portfolio from a Supabase pgvector vector database, and generates a grounded answer with DeepSeek — with per-visitor rate limiting and on-topic guardrails. So when you chat with it, you're seeing Andi's RAG engineering working live."
   }
 ]

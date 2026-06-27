@@ -1,4 +1,4 @@
-// RAG chat endpoint: embed -> retrieve (Supabase pgvector) -> generate (DeepSeek)
+// RAG chat: embed query (Voyage) -> retrieve (Supabase pgvector) -> generate (DeepSeek)
 const readBody = (req) => new Promise((resolve) => { let d = ''; req.on('data', (c) => (d += c)); req.on('end', () => resolve(d)); });
 
 module.exports = async function handler(req, res) {
@@ -7,8 +7,8 @@ module.exports = async function handler(req, res) {
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST only' });
 
-  const { SUPABASE_URL: SUPA, SUPABASE_ANON_KEY: ANON, OPENAI_API_KEY: OAI, DEEPSEEK_API_KEY: DS } = process.env;
-  if (!SUPA || !ANON || !OAI || !DS) return res.status(500).json({ error: 'Server not configured yet.' });
+  const { SUPABASE_URL: SUPA, SUPABASE_ANON_KEY: ANON, VOYAGE_API_KEY: VOY, DEEPSEEK_API_KEY: DS } = process.env;
+  if (!SUPA || !ANON || !VOY || !DS) return res.status(500).json({ error: 'Server not configured yet.' });
 
   let q = '';
   try { q = String((JSON.parse((await readBody(req)) || '{}').message) || '').trim().slice(0, 500); } catch (_) {}
@@ -27,13 +27,13 @@ module.exports = async function handler(req, res) {
     if (allowed === false) return res.status(429).json({ answer: "You're going a bit fast — give it a few seconds and ask again." });
   } catch (_) {}
 
-  // embed the question
+  // embed the question with Voyage (asymmetric: query type)
   let embedding;
   try {
-    const er = await fetch('https://api.openai.com/v1/embeddings', {
+    const er = await fetch('https://api.voyageai.com/v1/embeddings', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${OAI}` },
-      body: JSON.stringify({ model: 'text-embedding-3-small', input: q }),
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${VOY}` },
+      body: JSON.stringify({ model: 'voyage-3.5-lite', input: [q], input_type: 'query', output_dimension: 1024 }),
     });
     if (!er.ok) throw new Error(await er.text());
     embedding = (await er.json()).data[0].embedding;

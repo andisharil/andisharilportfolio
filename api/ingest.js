@@ -1,11 +1,11 @@
-// One-time/occasional ingest: embed KB chunks (OpenAI) -> insert into Supabase pgvector.
+// Ingest: embed KB chunks with Voyage (document type) -> insert into Supabase pgvector.
 // Protected by INGEST_SECRET header. Body: { chunks: [{title, content}], clear?: true }
 const readBody = (req) => new Promise((resolve) => { let d = ''; req.on('data', (c) => (d += c)); req.on('end', () => resolve(d)); });
 
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST only' });
-  const { SUPABASE_URL: SUPA, SUPABASE_ANON_KEY: ANON, OPENAI_API_KEY: OAI, INGEST_SECRET } = process.env;
-  if (!SUPA || !ANON || !OAI || !INGEST_SECRET) return res.status(500).json({ error: 'Server not configured yet.' });
+  const { SUPABASE_URL: SUPA, SUPABASE_ANON_KEY: ANON, VOYAGE_API_KEY: VOY, INGEST_SECRET } = process.env;
+  if (!SUPA || !ANON || !VOY || !INGEST_SECRET) return res.status(500).json({ error: 'Server not configured yet.' });
   if (req.headers['x-ingest-secret'] !== INGEST_SECRET) return res.status(401).json({ error: 'unauthorized' });
 
   let body;
@@ -19,13 +19,15 @@ module.exports = async function handler(req, res) {
     body: JSON.stringify(b),
   });
   const embed = async (text) => {
-    const r = await fetch('https://api.openai.com/v1/embeddings', {
+    const r = await fetch('https://api.voyageai.com/v1/embeddings', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${OAI}` },
-      body: JSON.stringify({ model: 'text-embedding-3-small', input: text }),
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${VOY}` },
+      body: JSON.stringify({ model: 'voyage-3.5-lite', input: [text], input_type: 'document', output_dimension: 1024 }),
     });
     if (!r.ok) throw new Error('embed: ' + (await r.text()));
-    return (await r.json()).data[0].embedding;
+    const e = (await r.json()).data[0].embedding;
+    if (!Array.isArray(e) || e.length !== 1024) throw new Error('unexpected embedding dim: ' + (e ? e.length : 'none'));
+    return e;
   };
 
   try {
