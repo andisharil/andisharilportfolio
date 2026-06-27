@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T17:00:00.962Z",
+  "updated": "2026-06-27T19:53:15.296Z",
   "source": "Monday.com — Automation & Integration Tracker",
   "board": "18416976039",
   "counts": {
@@ -14,7 +14,7 @@
       "state": "live",
       "platform": "n8n",
       "type": "Automation",
-      "client": "NikahSatu"
+      "client": "Undisclosed"
     },
     {
       "name": "Catering Order Automation Monday.com x Sufy",
@@ -22,7 +22,7 @@
       "state": "live",
       "platform": "n8n",
       "type": "Automation, AI Agent",
-      "client": "NikahSatu"
+      "client": "Undisclosed"
     },
     {
       "name": "Telegram Chatbot for Expenses",
@@ -30,7 +30,7 @@
       "state": "live",
       "platform": "n8n, Telegram, Google",
       "type": "Bot, AI Agent",
-      "client": "NikahSatu"
+      "client": "Undisclosed"
     },
     {
       "name": "[Google Map] Check pin point location RAJ KL",
@@ -38,7 +38,7 @@
       "state": "live",
       "platform": "Google",
       "type": "Other",
-      "client": "NikahSatu"
+      "client": "Undisclosed"
     },
     {
       "name": "All City Team - Auto Create Subitems",
@@ -46,7 +46,7 @@
       "state": "live",
       "platform": "n8n",
       "type": "Automation, Integration",
-      "client": "NikahSatu"
+      "client": "Undisclosed"
     },
     {
       "name": "Storehub -- Monday.com Automation + FIFO",
@@ -54,7 +54,7 @@
       "state": "live",
       "platform": "Boost.space",
       "type": "Automation, Integration",
-      "client": "NikahSatu"
+      "client": "Undisclosed"
     },
     {
       "name": "Sales Daily Report (Monday.com - Telegram)",
@@ -62,7 +62,7 @@
       "state": "live",
       "platform": "Boost.space",
       "type": "Automation",
-      "client": "NikahSatu"
+      "client": "Undisclosed"
     },
     {
       "name": "Daily Lead Check (+1)",
@@ -70,7 +70,7 @@
       "state": "live",
       "platform": "n8n, Monday.com, Telegram",
       "type": "Automation",
-      "client": "NikahSatu"
+      "client": "Undisclosed"
     },
     {
       "name": "[Weekly Run] Sync Data across Multiple Board",
@@ -78,7 +78,7 @@
       "state": "live",
       "platform": "n8n",
       "type": "Automation",
-      "client": "NikahSatu"
+      "client": "Undisclosed"
     },
     {
       "name": "LOCAL SEO OPTIMIZATION",
@@ -86,7 +86,7 @@
       "state": "testing",
       "platform": "Hermes",
       "type": "AI Agent, Automation",
-      "client": "NikahSatu"
+      "client": "Undisclosed"
     },
     {
       "name": "[29 Venue] Sync Monday.com Calendar  → Google Calendar",
@@ -94,7 +94,7 @@
       "state": "testing",
       "platform": "n8n, Google",
       "type": "Integration",
-      "client": "NikahSatu"
+      "client": "Undisclosed"
     },
     {
       "name": "Alivehq API Development",
@@ -102,7 +102,7 @@
       "state": "testing",
       "platform": "",
       "type": "Automation",
-      "client": "NikahSatu"
+      "client": "Undisclosed"
     },
     {
       "name": "Sosial Media Automation",
@@ -110,7 +110,7 @@
       "state": "testing",
       "platform": "n8n",
       "type": "AI Agent, Automation",
-      "client": "Zest Creative, NikahSatu"
+      "client": "Undisclosed"
     }
   ]
 }
