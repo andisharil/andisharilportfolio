@@ -1,11 +1,11 @@
 {
-  "updated": "2026-07-19T17:00:00.846Z",
+  "updated": "2026-07-20T17:00:01.987Z",
   "source": "Monday.com — Automation & Integration Tracker",
   "board": "18416976039",
   "counts": {
     "live": 10,
-    "testing": 4,
-    "total": 14
+    "testing": 5,
+    "total": 15
   },
   "items": [
     {
@@ -118,6 +118,14 @@
       "state": "testing",
       "platform": "n8n",
       "type": "AI Agent, Automation",
+      "client": "Undisclosed"
+    },
+    {
+      "name": "Auto-Push Timeline & FM Note → Board Photo",
+      "status": "Testing",
+      "state": "testing",
+      "platform": "n8n, Monday.com",
+      "type": "Automation",
       "client": "Undisclosed"
     }
   ]
