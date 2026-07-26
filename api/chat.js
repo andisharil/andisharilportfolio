@@ -71,8 +71,8 @@ module.exports = async function handler(req, res) {
         temperature: 0.3,
       }),
     });
-    if (!dr.ok) throw new Error(await dr.text());
+    if (!dr.ok) throw new Error('deepseek ' + dr.status + ': ' + (await dr.text()).slice(0, 300));
     const answer = (await dr.json()).choices?.[0]?.message?.content?.trim() || "Sorry, I couldn't generate a response.";
     return res.status(200).json({ answer });
-  } catch (e) { return res.status(502).json({ error: 'generation failed' }); }
+  } catch (e) { return res.status(502).json({ error: 'generation failed', detail: String(e && e.message).slice(0, 300) }); }
 };
