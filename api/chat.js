@@ -65,14 +65,14 @@ module.exports = async function handler(req, res) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${DS}` },
       body: JSON.stringify({
-        model: 'deepseek-chat',
+        model: 'deepseek-v4-flash',
         messages: [ { role: 'system', content: system }, { role: 'user', content: q } ],
         max_tokens: 450,
         temperature: 0.3,
       }),
     });
-    if (!dr.ok) throw new Error('deepseek ' + dr.status + ': ' + (await dr.text()).slice(0, 300));
+    if (!dr.ok) throw new Error(await dr.text());
     const answer = (await dr.json()).choices?.[0]?.message?.content?.trim() || "Sorry, I couldn't generate a response.";
     return res.status(200).json({ answer });
-  } catch (e) { return res.status(502).json({ error: 'generation failed', detail: String(e && e.message).slice(0, 300) }); }
+  } catch (e) { return res.status(502).json({ error: 'generation failed' }); }
 };
