@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-26T17:00:00.969Z",
+  "updated": "2026-07-27T17:00:01.655Z",
   "source": "Monday.com — Automation & Integration Tracker",
   "board": "18416976039",
   "counts": {
-    "live": 11,
-    "testing": 5,
+    "live": 12,
+    "testing": 4,
     "total": 16
   },
   "items": [
@@ -81,6 +81,14 @@
       "client": "Undisclosed"
     },
     {
+      "name": "Auto-Push Timeline & FM Note → Board Photo",
+      "status": "Done / Live",
+      "state": "live",
+      "platform": "n8n, Monday.com",
+      "type": "Automation",
+      "client": "Undisclosed"
+    },
+    {
       "name": "Vendor Balance Payment Tracker",
       "status": "Done / Live",
       "state": "live",
@@ -126,14 +134,6 @@
       "state": "testing",
       "platform": "n8n",
       "type": "AI Agent, Automation",
-      "client": "Undisclosed"
-    },
-    {
-      "name": "Auto-Push Timeline & FM Note → Board Photo",
-      "status": "Testing",
-      "state": "testing",
-      "platform": "n8n, Monday.com",
-      "type": "Automation",
       "client": "Undisclosed"
     }
   ]
