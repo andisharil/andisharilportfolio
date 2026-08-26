@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-25T17:00:00.984Z",
+  "updated": "2026-08-26T17:00:01.102Z",
   "source": "Monday.com — Automation & Integration Tracker",
   "board": "18416976039",
   "counts": {
@@ -113,7 +113,7 @@
       "client": "Undisclosed"
     },
     {
-      "name": "[30 Venue] Sync Monday.com Calendar  → Google Calendar",
+      "name": "[31 Venue] Sync Monday.com Calendar  → Google Calendar",
       "status": "Testing",
       "state": "testing",
       "platform": "n8n, Google",
