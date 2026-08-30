@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-29T17:00:00.903Z",
+  "updated": "2026-08-30T17:00:01.018Z",
   "source": "Monday.com — Automation & Integration Tracker",
   "board": "18416976039",
   "counts": {
-    "live": 12,
-    "testing": 4,
+    "live": 13,
+    "testing": 3,
     "total": 16
   },
   "items": [
@@ -22,6 +22,14 @@
       "state": "live",
       "platform": "n8n",
       "type": "Automation, AI Agent",
+      "client": "Undisclosed"
+    },
+    {
+      "name": "[31 Venue] Sync Monday.com Calendar  → Google Calendar",
+      "status": "Done / Live",
+      "state": "live",
+      "platform": "n8n, Google",
+      "type": "Integration",
       "client": "Undisclosed"
     },
     {
@@ -110,14 +118,6 @@
       "state": "testing",
       "platform": "Hermes",
       "type": "AI Agent, Automation",
-      "client": "Undisclosed"
-    },
-    {
-      "name": "[31 Venue] Sync Monday.com Calendar  → Google Calendar",
-      "status": "Testing",
-      "state": "testing",
-      "platform": "n8n, Google",
-      "type": "Integration",
       "client": "Undisclosed"
     },
     {
